@@ -6,7 +6,7 @@ exports[`Home renders successfully 1`] = `
     class="flex flex-col w-full"
   >
     <div>
-      Home
+      Dashboard
     </div>
   </div>
 </div>

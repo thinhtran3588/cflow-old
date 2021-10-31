@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import {Transition} from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
@@ -21,7 +20,6 @@ export const Nav = (props: NavProps): JSX.Element => {
   const [expandMenu, setExpandVisible] = useState(true);
 
   const toggleExpandMenu = (): void => {
-    console.log('toggle');
     setExpandVisible(!expandMenu);
   };
 
