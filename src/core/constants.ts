@@ -25,7 +25,7 @@ export const THEMES = [
 ];
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mangaview.xyz';
-export const SITE_NAME = 'Web Template';
+export const SITE_NAME = 'CFlow';
 export const SITE_AUTHOR = 'Thinh Tran';
 export const SITE_AUTHOR_LINK = 'https://thinhtran.pro';
 

@@ -36,6 +36,9 @@ module.exports = {
         10: '10rem',
         12: '12rem',
       },
+      transitionProperty: {
+        width: 'width',
+      },
     },
   },
   variants: {
