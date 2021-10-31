@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import {Transition} from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
@@ -20,6 +21,7 @@ export const Nav = (props: NavProps): JSX.Element => {
   const [expandMenu, setExpandVisible] = useState(true);
 
   const toggleExpandMenu = (): void => {
+    console.log('toggle');
     setExpandVisible(!expandMenu);
   };
 
@@ -91,8 +93,8 @@ export const Nav = (props: NavProps): JSX.Element => {
       <div className='hidden md:flex flex-1 items-end'>
         <div
           className={clsx(
-            'hidden md:block font-semibold text-xl h-12 p-2 transition-all duration-1000',
-            expandMenu ? 'w-0 opacity-0' : 'w-full opacity-100',
+            'hidden md:block font-semibold text-xl h-12 transition-all duration-1000',
+            expandMenu ? 'w-0 opacity-100' : 'w-full opacity-100 p-2',
           )}
         >
           <Link href='/'>
