@@ -1,4 +1,14 @@
 import {useRouter} from 'next/router';
+import TemplateIcon from '@heroicons/react/outline/TemplateIcon';
+import TemplateIconSolid from '@heroicons/react/solid/TemplateIcon';
+import HeartIcon from '@heroicons/react/outline/HeartIcon';
+import HeartIconSolid from '@heroicons/react/solid/HeartIcon';
+import SearchCircleIcon from '@heroicons/react/outline/SearchCircleIcon';
+import SearchCircleIconSolid from '@heroicons/react/solid/SearchCircleIcon';
+import CurrencyDollarIcon from '@heroicons/react/outline/CurrencyDollarIcon';
+import CurrencyDollarIconSolid from '@heroicons/react/solid/CurrencyDollarIcon';
+import CogIcon from '@heroicons/react/outline/CogIcon';
+import CogIconSolid from '@heroicons/react/solid/CogIcon';
 import type {MenuItem} from '@core/interfaces';
 import {Nav} from './nav';
 
@@ -7,31 +17,36 @@ const MENU_ITEMS: MenuItem[] = [
     key: 'TAB_DASHBOARD',
     href: '/',
     current: false,
-    icon: 'template',
+    icon: <TemplateIcon className='w-6 h-6' />,
+    focusedIcon: <TemplateIconSolid className='w-6 h-6' />,
   },
   {
     key: 'TAB_FAVORITES',
     href: '/favorites',
     current: false,
-    icon: 'heart',
+    icon: <HeartIcon className='w-6 h-6' />,
+    focusedIcon: <HeartIconSolid className='w-6 h-6' />,
   },
   {
     key: 'TAB_INSPECTOR',
     href: '/inspector',
     current: false,
-    icon: 'search-circle',
+    icon: <SearchCircleIcon className='w-6 h-6' />,
+    focusedIcon: <SearchCircleIconSolid className='w-6 h-6' />,
   },
   {
     key: 'TAB_ACCOUNT',
     href: '/account',
     current: false,
-    icon: 'currency-dollar',
+    icon: <CurrencyDollarIcon className='w-6 h-6' />,
+    focusedIcon: <CurrencyDollarIconSolid className='w-6 h-6' />,
   },
   {
     key: 'TAB_SETTINGS',
     href: '/settings',
     current: false,
-    icon: 'cog',
+    icon: <CogIcon className='w-6 h-6' />,
+    focusedIcon: <CogIconSolid className='w-6 h-6' />,
   },
 ];
 
