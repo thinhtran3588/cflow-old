@@ -1,14 +1,15 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 import {Fragment, useState} from 'react';
+import ChevronLeftIcon from '@heroicons/react/solid/ChevronLeftIcon';
+import ChevronRightIcon from '@heroicons/react/solid/ChevronRightIcon';
 import type {MenuItem} from '@core/interfaces';
 import {getI18nText} from '@core/helpers/get-i18n-text';
 import SITE_I18N_TEXT from '@locales/site.json';
-import {Icon} from './icon';
 import {Logo} from './logo';
 import {Footer} from './footer';
+import {TqtIcon} from './tqt-icon';
 
 export interface NavProps {
   menuItems: MenuItem[];
@@ -55,7 +56,7 @@ export const Nav = (props: NavProps): JSX.Element => {
           className='flex justify-center items-center p-1'
           onClick={toggleExpandMenu}
         >
-          <Icon name={expandMenu ? 'chevron-left' : 'chevron-right'} />
+          {expandMenu ? <ChevronLeftIcon className='w-6 h-6' /> : <ChevronRightIcon className='w-6 h-6' />}
         </button>
       </div>
       {menuItems.map((item, index) => (
@@ -73,9 +74,7 @@ export const Nav = (props: NavProps): JSX.Element => {
               title={getI18nText(SITE_I18N_TEXT, item.key, router)}
             >
               <span className='flex flex-col items-center md:flex-row px-0 py-2 md:pl-3'>
-                <span>
-                  <Icon name={item.icon} className='w-6 h-6' type={item.current ? 'solid' : 'outline'} />
-                </span>
+                <span>{item.current ? item.focusedIcon : item.icon}</span>
                 <span
                   className={clsx(
                     'text-xs transition-all duration-700 whitespace-nowrap overflow-ellipsis',
@@ -98,7 +97,7 @@ export const Nav = (props: NavProps): JSX.Element => {
         >
           <Link href='/'>
             <a className='flex items-center flex-1' role='link' aria-hidden='true'>
-              <Image src='/icons/tqt-icon.svg' alt='TQT Logo' width={30} height={30} />
+              <TqtIcon className='w-10 h-10' />
             </a>
           </Link>
         </div>

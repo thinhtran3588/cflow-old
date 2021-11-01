@@ -5,11 +5,6 @@ export interface LogoProps {
   className?: string;
 }
 
-const COLOR1 = CONSTANTS.COLOR.ERROR_LIGHT;
-const COLOR2 = CONSTANTS.COLOR.ERROR;
-const COLOR3 = CONSTANTS.COLOR.SUCCESS_LIGHT;
-const COLOR4 = CONSTANTS.COLOR.SUCCESS;
-
 export const Logo = (props: LogoProps): JSX.Element => {
   const {className} = props;
 
@@ -41,8 +36,8 @@ export const Logo = (props: LogoProps): JSX.Element => {
             y2='142.055'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stopColor={COLOR1} />
-            <stop offset='1' stopColor={COLOR2} />
+            <stop stopColor={CONSTANTS.COLOR.ERROR_LIGHT} />
+            <stop offset='1' stopColor={CONSTANTS.COLOR.ERROR} />
           </linearGradient>
           <linearGradient
             id='paint1_linear_1:6'
@@ -52,8 +47,8 @@ export const Logo = (props: LogoProps): JSX.Element => {
             y2='229.056'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stopColor={COLOR3} />
-            <stop offset='1' stopColor={COLOR4} />
+            <stop stopColor={CONSTANTS.COLOR.SUCCESS_LIGHT} />
+            <stop offset='1' stopColor={CONSTANTS.COLOR.SUCCESS} />
           </linearGradient>
           <linearGradient
             id='paint2_linear_1:6'
@@ -63,8 +58,8 @@ export const Logo = (props: LogoProps): JSX.Element => {
             y2='-58.1504'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stopColor={COLOR3} />
-            <stop offset='1' stopColor={COLOR4} />
+            <stop stopColor={CONSTANTS.COLOR.SUCCESS_LIGHT} />
+            <stop offset='1' stopColor={CONSTANTS.COLOR.SUCCESS} />
           </linearGradient>
           <linearGradient
             id='paint3_linear_1:6'
@@ -74,8 +69,8 @@ export const Logo = (props: LogoProps): JSX.Element => {
             y2='61.9766'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stopColor={COLOR3} />
-            <stop offset='1' stopColor={COLOR4} />
+            <stop stopColor={CONSTANTS.COLOR.SUCCESS_LIGHT} />
+            <stop offset='1' stopColor={CONSTANTS.COLOR.SUCCESS} />
           </linearGradient>
         </defs>
       </svg>
