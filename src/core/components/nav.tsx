@@ -77,7 +77,7 @@ export const Nav = (props: NavProps): JSX.Element => {
                 <span>{item.current ? item.focusedIcon : item.icon}</span>
                 <span
                   className={clsx(
-                    'text-xs transition-all duration-700 whitespace-nowrap overflow-ellipsis',
+                    'text-xs md:text-base transition-all duration-700 whitespace-nowrap overflow-ellipsis',
                     expandMenu ? 'md:ml-2 md:w-40 opacity-100' : 'md:ml-0 md:w-0 opacity-0',
                   )}
                 >
