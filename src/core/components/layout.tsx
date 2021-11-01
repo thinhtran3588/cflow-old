@@ -45,7 +45,10 @@ export const Layout = (props: LayoutProps): JSX.Element => {
   const menuItems: MenuItem[] = MENU_ITEMS.map((item) => ({...item, current: router.route === item.href}));
 
   return (
-    <div className='font-roboto min-h-screen max-h-screen bg-gray-200 dark:bg-gray-700 dark:text-white flex'>
+    <div
+      className={`font-roboto min-h-screen max-h-screen 
+        transition-all duration-700 bg-gray-200 dark:bg-gray-700 dark:text-white flex`}
+    >
       <Nav menuItems={menuItems} />
       <main className='p-1 pb-10 flex-1'>{children}</main>
     </div>

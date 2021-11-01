@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import {useRouter} from 'next/router';
 import {getI18nText} from '@core/helpers/get-i18n-text';
-import {SITE_AUTHOR, SITE_AUTHOR_LINK, VERSION} from '@core/constants';
+import CONSTANTS from '@core/constants.json';
 import SITE_I18N_TEXT from '@locales/site.json';
+
+const {SITE_AUTHOR, SITE_AUTHOR_LINK, VERSION} = CONSTANTS;
 
 export const Footer = (): JSX.Element => {
   const router = useRouter();

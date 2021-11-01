@@ -1,13 +1,14 @@
 /* eslint-disable max-len */
+import CONSTANTS from '../constants.json';
 
 export interface LogoProps {
   className?: string;
 }
 
-const COLOR1 = '#EB5757';
-const COLOR2 = '#F2994A';
-const COLOR3 = '#6FCF97';
-const COLOR4 = '#219653';
+const COLOR1 = CONSTANTS.COLOR.ERROR_LIGHT;
+const COLOR2 = CONSTANTS.COLOR.ERROR;
+const COLOR3 = CONSTANTS.COLOR.SUCCESS_LIGHT;
+const COLOR4 = CONSTANTS.COLOR.SUCCESS;
 
 export const Logo = (props: LogoProps): JSX.Element => {
   const {className} = props;
