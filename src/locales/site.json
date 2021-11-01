@@ -5,8 +5,12 @@
     "MENU": "Menu",
     "SCROLL_TO_TOP": "Scroll to top",
     "SITE_DESCRIPTION": "Site description",
-    "SITE_NAME": "Web Template",
+    "SITE_NAME": "CFlow",
+    "TAB_ACCOUNT": "Account",
+    "TAB_DASHBOARD": "Dashboard",
+    "TAB_FAVORITES": "Favorites",
     "TAB_HOME": "Home",
+    "TAB_INSPECTOR": "Inspector",
     "TAB_SETTINGS": "Settings",
     "VERSION": "Version"
   },
@@ -16,8 +20,12 @@
     "MENU": "Danh mục",
     "SCROLL_TO_TOP": "Lên đầu trang",
     "SITE_DESCRIPTION": "Site description",
-    "SITE_NAME": "Web Template",
+    "SITE_NAME": "CFlow",
+    "TAB_ACCOUNT": "Tài khoản",
+    "TAB_DASHBOARD": "Tổng hợp",
+    "TAB_FAVORITES": "Yêu thích",
     "TAB_HOME": "Trang chủ",
+    "TAB_INSPECTOR": "Tìm kiếm",
     "TAB_SETTINGS": "Cài đặt",
     "VERSION": "Phiên bản"
   }
