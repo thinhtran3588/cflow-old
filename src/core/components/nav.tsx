@@ -20,7 +20,6 @@ export const Nav = (props: NavProps): JSX.Element => {
   const [expandMenu, setExpandVisible] = useState(true);
 
   const toggleExpandMenu = (): void => {
-    console.log('toggle');
     setExpandVisible(!expandMenu);
   };
 
