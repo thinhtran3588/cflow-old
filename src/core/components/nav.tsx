@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import {Transition} from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
