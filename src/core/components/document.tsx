@@ -3,6 +3,7 @@ import CONSTANTS from '@core/constants.json';
 import NextDocument, {Html, Head, Main, NextScript, DocumentInitialProps, DocumentContext} from 'next/document';
 
 const {SITE_NAME} = CONSTANTS;
+
 export class Document extends NextDocument {
   static getInitialProps = async (ctx: DocumentContext): Promise<DocumentInitialProps> => {
     const initialProps = await NextDocument.getInitialProps(ctx);
