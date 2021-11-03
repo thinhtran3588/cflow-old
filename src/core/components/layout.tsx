@@ -65,7 +65,9 @@ export const Layout = (props: LayoutProps): JSX.Element => {
         transition-all duration-700 bg-gray-200 dark:bg-gray-700 dark:text-white flex`}
     >
       <Nav menuItems={menuItems} />
-      <main className='p-1 pb-10 flex-1'>{children}</main>
+      <main className='p-1 pb-10 flex-1'>
+        <div className='w-full lg:container mx-auto'>{children}</div>
+      </main>
     </div>
   );
 };

@@ -8,9 +8,9 @@ export const Favorites: NextPage = (): JSX.Element => {
   const router = useRouter();
 
   return (
-    <div className='flex flex-col w-full'>
+    <>
       <Seo />
       <div>{getI18nText(SITE_I18N_TEXT, 'TAB_FAVORITES', router)}</div>
-    </div>
+    </>
   );
 };

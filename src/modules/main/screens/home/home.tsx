@@ -8,9 +8,9 @@ export const Home: NextPage = (): JSX.Element => {
   const router = useRouter();
 
   return (
-    <div className='flex flex-col w-full'>
+    <>
       <Seo />
       <div>{getI18nText(SITE_I18N_TEXT, 'TAB_DASHBOARD', router)}</div>
-    </div>
+    </>
   );
 };
